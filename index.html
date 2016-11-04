@@ -7,14 +7,13 @@
   <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
-    <div class="home-wrap" w3-include-html="_includes/index.html">
+    <div class="home-wrap">
     </div>
 
     <script src="assets/js/jquery-2.1.4.min.js"></script>
-    <script src="http://www.w3schools.com/lib/w3data.js"></script>
-    <script src="assets/js/functions.js" type="text/javascript"></script>
     <script>
-            w3IncludeHTML();
+        $('.home-wrap').load('../_includes/index.html')
     </script>
+    <script src="assets/js/functions.js" type="text/javascript"></script>
 </body>
 </html>
